@@ -14,22 +14,28 @@
  * http://www.nfq.lt
  *
  */
-class nfq_oxArticle extends nfq_oxArticle_parent
-{
+class nfq_Start extends nfq_Start_parent{
 
     /**
-     * Returns true/false if article is marked as hot offer.
+     * Template variable getter. Returns hot offer list
      *
-     * @return boolean;
+     * @return array
      */
-    public function isHotOffer(){
+    public function getHotOfferList()
+    {
+        if ( $this->_aHotOfferList === null ) {
+            $oArtList = oxNew( 'oxarticlelist' );
+            $oArtList->loadHotOfferArticles();
 
-        if($this->oxarticles__nfqhotoffer->value == 1){
-            return true;
+            if ( count( $oArtList ) ) {
+                $this->_aHotOfferList = $oArtList;
+            }
+
         }
 
-        return false;
-
+        return $this->_aHotOfferList;
     }
 
 }
+
+?>

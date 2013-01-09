@@ -18,7 +18,10 @@ $aModule = array(
     'url'          => 'http://www.nfq.lt',
     'email'        => 'info@nfq.lt',
     'extend'       => array(
-        'oxarticle'              => 'hotoffer/models/nfq_oxarticle'
+        'oxarticle'              => 'hotoffer/models/nfq_oxarticle',
+        'oxarticlelist'          => 'hotoffer/models/nfq_oxarticlelist',
+        'alist'                  => 'hotoffer/controllers/nfq_alist',
+        'start'                  => 'hotoffer/controllers/nfq_start',
     ),
     
     'files' => array(

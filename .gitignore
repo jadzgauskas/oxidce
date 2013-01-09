@@ -1,0 +1,8 @@
+# php storm ingnored files
+.idea
+
+# oxid ingnored files
+config.inc.php
+log/
+tmp/
+setup/

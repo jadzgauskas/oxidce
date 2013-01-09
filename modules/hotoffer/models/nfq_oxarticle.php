@@ -17,6 +17,14 @@
 class nfq_oxArticle extends nfq_oxArticle_parent
 {
 
+    public function isHotOffer(){
 
+        if($this->oxarticles__nfqhotoffer->value == 1){
+            return true;
+        }
+
+        return false;
+
+    }
 
 }

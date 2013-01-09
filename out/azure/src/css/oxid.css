@@ -5283,3 +5283,21 @@ a.downloadableFile.pending {
 #betaNote+#page {
     padding-top: 35px;
 }
+
+/* hot offer css*/
+.hotoffer{
+    position: absolute;
+    width: 122px;
+    height: 128px;
+    background: url("../../img/hot_offer.png") 0 0 no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+
+
+
+

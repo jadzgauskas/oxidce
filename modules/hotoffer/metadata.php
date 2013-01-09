@@ -21,16 +21,17 @@ $aModule = array(
         'oxarticle'              => 'hotoffer/models/nfq_oxarticle',
         'oxarticlelist'          => 'hotoffer/models/nfq_oxarticlelist',
         'alist'                  => 'hotoffer/controllers/nfq_alist',
-        'start'                  => 'hotoffer/controllers/nfq_start',
+        'start'                  => 'hotoffer/controllers/nfq_start'
     ),
     
     'files' => array(
-        'nfq_hot_offer'          => 'hotoffer/controllers/admin/nfq_hot_offer.php'
-
+        'nfq_hot_offer'          => 'hotoffer/controllers/admin/nfq_hot_offer.php',
+        'nfq_hotoffers'          => 'hotoffer/controllers/nfq_hotoffers.php'
     ),
     
     'templates' => array(
-        'nfq_hot_offer.tpl'      => 'hotoffer/views/admin/tpl/nfq_hot_offer.tpl'
+        'nfq_hot_offer.tpl'      => 'hotoffer/views/admin/tpl/nfq_hot_offer.tpl',
+        'nfq_hotoffers.tpl'      => 'hotoffer/views/azure/tpl/custom/nfq_hotoffers.tpl'
     )
     
 );
